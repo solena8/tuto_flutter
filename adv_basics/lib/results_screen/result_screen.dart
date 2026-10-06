@@ -7,6 +7,8 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:adv_basics/data/questions.dart';
 import 'package:adv_basics/results_screen/questions_summary.dart';
 
+import '../theme/theme.dart';
+
 // Cubit permet à un écran dynamique d'être un stateless widget
 class ResultScreen extends StatelessWidget {
   const ResultScreen({
@@ -41,23 +43,22 @@ class ResultScreen extends StatelessWidget {
               return SizedBox(
                 width: double.infinity,
                 child: Container(
-                  margin: const EdgeInsets.all(40),
+                  margin: const EdgeInsets.all(AppTheme.edgeXL),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
                       Text(
                         'You have answered $numCorrectQuestions out of $numTotalQuestions questions correctly',
-                        style: GoogleFonts.lato(
-                          color: const Color.fromARGB(255, 201, 153, 251),
+                        style: AppTheme.defaultFont.copyWith(
+                          color: AppTheme.textColor,
                           fontSize: 20,
-                          fontWeight: FontWeight.bold,
                         ),
                         textAlign: TextAlign.center,
                       ),
-                      const SizedBox(height: 30),
+                      const SizedBox(height: AppTheme.sizedboxM),
                       QuestionSummary(result),
-                      const SizedBox(height: 30),
+                      const SizedBox(height: AppTheme.sizedboxM),
                       StartButton(restartQuiz, 'Restart Quiz'),
                     ],
                   ),

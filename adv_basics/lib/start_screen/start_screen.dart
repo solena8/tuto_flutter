@@ -1,11 +1,10 @@
 import 'package:adv_basics/startButton.dart';
+import 'package:adv_basics/theme/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class StartScreen extends StatelessWidget {
   const StartScreen(this.startQuiz, {super.key});
-
-  // On passe en argument une fonction sans arguments qui ne retournera rien)
 
   final void Function() startQuiz;
 
@@ -18,18 +17,17 @@ class StartScreen extends StatelessWidget {
           Image.asset(
             'assets/images/quiz-logo.png',
             width: 300,
-            color: Color.fromARGB(150, 255, 255, 255),
+            color: AppTheme.backgroundColor,
           ),
-          const SizedBox(height: 80),
+          const SizedBox(height: AppTheme.sizedboxL),
           Text(
             'Learn Flutter the fun way!',
-            style: GoogleFonts.lato(
-              color: const Color.fromARGB(255, 201, 153, 251),
+            style: AppTheme.defaultFont.copyWith(
+              color: AppTheme.textColor,
               fontSize: 24,
-              fontWeight: FontWeight.bold,
             ),
           ),
-          const SizedBox(height: 30),
+          const SizedBox(height: AppTheme.sizedboxM),
           StartButton(startQuiz, 'Start Quiz')
         ],
       ),

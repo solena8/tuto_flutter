@@ -1,5 +1,6 @@
 import 'package:adv_basics/question_screen/question_screen.dart';
 import 'package:adv_basics/start_screen/start_screen.dart';
+import 'package:adv_basics/theme/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:adv_basics/data/questions.dart';
 import 'package:adv_basics/results_screen/result_screen.dart';
@@ -56,8 +57,8 @@ class _QuizState extends State<Quiz> {
           decoration: const BoxDecoration(
             gradient: LinearGradient(
               colors: [
-                Color.fromARGB(255, 170, 13, 200),
-                Color.fromARGB(200, 50, 15, 168),
+                AppTheme.primaryColor,
+                AppTheme.secondaryColor,
               ],
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,

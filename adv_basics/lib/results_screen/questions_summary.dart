@@ -29,7 +29,7 @@ class QuestionSummary extends StatelessWidget {
                       shape: BoxShape.circle,
                       color: answerColors
                   ),
-                  margin: const EdgeInsets.only(right: AppTheme.edgeMedium, top: AppTheme.edgeSmall),
+                  margin: const EdgeInsets.only(right: AppTheme.edgeM, top: AppTheme.edgeS),
                   child: Center(
                     child: Text(
                       ((data['question_index'] as int) + 1).toString(),
@@ -43,10 +43,10 @@ class QuestionSummary extends StatelessWidget {
                       Text(
                         data['question'] as String,
                         style: AppTheme.defaultFont.copyWith(
-                          color: AppTheme.summaryQuestionTextColor,
+                          color: AppTheme.textColor,
                         ),
                       ),
-                      SizedBox(height: AppTheme.edgeSmall),
+                      SizedBox(height: AppTheme.edgeS),
                       Text(data['correct_answer'] as String,
                           style: AppTheme.defaultFont),
                       Text(
@@ -55,7 +55,7 @@ class QuestionSummary extends StatelessWidget {
                           color: answerColors,
                         ),
                       ),
-                      SizedBox(height: AppTheme.edgeLarge)
+                      SizedBox(height: AppTheme.edgeL)
                     ],
                   ),
                 ),

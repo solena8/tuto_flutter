@@ -33,7 +33,7 @@ class _QuestionsScreenState extends State<QuestionScreen> {
     return SizedBox(
       width: double.infinity,
       child: Container(
-        margin: EdgeInsets.all(40),
+        margin: EdgeInsets.all(AppTheme.edgeXL),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -41,17 +41,19 @@ class _QuestionsScreenState extends State<QuestionScreen> {
             Text(
               currentQuestion.text,
               style: AppTheme.defaultFont.copyWith(
-                color: const Color.fromARGB(255, 201, 153, 251),
+                color: AppTheme.textColor,
               ),
               textAlign: TextAlign.center,
             ),
 
-            const SizedBox(height: 30),
+            const SizedBox(height : AppTheme.sizedboxM),
             ...currentQuestion.getShuffledAnswers().map((answer) {
-              return AnswerButton(answerText: answer, onTap: () {
-                answerQuestion(answer);
-
-              });
+              return Padding(
+                padding: const EdgeInsets.only(bottom: AppTheme.edgeS),
+                child: AnswerButton(answerText: answer, onTap: () {
+                  answerQuestion(answer);
+                }),
+              );
             }),
           ],
         ),
