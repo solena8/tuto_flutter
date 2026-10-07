@@ -1,17 +1,16 @@
 import 'package:adv_basics/results_screen/result_cubit.dart';
 import 'package:adv_basics/results_screen/result_state.dart';
-import 'package:adv_basics/startButton.dart';
+import 'package:adv_basics/start_screen/startButton.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:adv_basics/data/questions.dart';
 import 'package:adv_basics/results_screen/questions_summary.dart';
 
 import '../theme/theme.dart';
 
 // Cubit permet à un écran dynamique d'être un stateless widget
-class ResultScreen extends StatelessWidget {
-  const ResultScreen({
+class ResultScreenView extends StatelessWidget {
+  const ResultScreenView({
     super.key,
     required this.restartQuiz,
     required this.chosenAnswers,
@@ -25,7 +24,7 @@ class ResultScreen extends StatelessWidget {
     // blocprovider crée le cubit et le rend dispo pour les widgets enfants
     // Ici il gerera un cubit de type ResultCubit
     return BlocProvider<ResultCubit>(
-      // create donne viie au cubit, context précis eou il est dans l'arbre à widget
+      // create donne vie au cubit, context précis eou il est dans l'arbre à widget
       create: (context) =>
           // ici l'état loading est initialisé, le cubit st crée et immediatement après la méthode est appellée
           ResultCubit(chosenAnswers: chosenAnswers)..getResult(),

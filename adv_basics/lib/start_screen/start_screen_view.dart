@@ -1,10 +1,10 @@
-import 'package:adv_basics/startButton.dart';
+import 'package:adv_basics/start_screen/startButton.dart';
 import 'package:adv_basics/theme/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class StartScreen extends StatelessWidget {
-  const StartScreen(this.startQuiz, {super.key});
+class StartScreenView extends StatelessWidget {
+  const StartScreenView(this.startQuiz, {super.key});
 
   final void Function() startQuiz;
 

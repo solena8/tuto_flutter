@@ -1,22 +1,21 @@
 import 'package:adv_basics/question_screen/answer_button.dart';
 import 'package:flutter/material.dart';
 import 'package:adv_basics/data/questions.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 import '../theme/theme.dart';
 
-class QuestionScreen extends StatefulWidget {
-  const QuestionScreen({super.key, required this.onSelectAnswer});
+class QuestionScreenView extends StatefulWidget {
+  const QuestionScreenView({super.key, required this.onSelectAnswer});
 
   final void Function(String answer) onSelectAnswer;
 
   @override
-  State<QuestionScreen> createState() {
+  State<QuestionScreenView> createState() {
     return _QuestionsScreenState();
   }
 }
 
-class _QuestionsScreenState extends State<QuestionScreen> {
+class _QuestionsScreenState extends State<QuestionScreenView> {
   var currentQuestionIndex = 0;
 
   void answerQuestion(String selectedAnswer) {

@@ -12,7 +12,7 @@ class ResultCubit extends Cubit<ResultState> {
   final List<String> chosenAnswers;
 
   Future<void> getResult() async {
-    // simulation de chargement pour mieux observer l'aapparition de l'état initial et le changement
+    // simulation de chargement pour mieux observer l'apparition de l'état initial et le changement
     await Future.delayed(const Duration(seconds: 2));
 
     final List<Map<String, Object>> result = [];
