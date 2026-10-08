@@ -1,5 +1,5 @@
 import 'package:auto_route/auto_route.dart';
-import 'package:autoroute_tuto/app_router.gr.dart';
+import 'package:autoroute_tuto/router/app_router.gr.dart';
 import 'package:autoroute_tuto/theme/theme.dart';
 import 'package:flutter/material.dart';
 

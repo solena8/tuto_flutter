@@ -1,6 +1,6 @@
 import 'package:autoroute_tuto/quiz_app.dart';
 import 'package:flutter/material.dart';
-import 'app_router.dart';
+import 'router/app_router.dart';
 
 void main() {
   runApp(const QuizApp());

@@ -1,7 +1,7 @@
 import 'package:auto_route/annotations.dart';
 import 'package:autoroute_tuto/theme/theme.dart';
 import 'package:flutter/material.dart';
-import 'models/quiz_question.dart';
+import '../models/quiz_question.dart';
 
 class QuestionCard extends StatelessWidget {
   const QuestionCard({

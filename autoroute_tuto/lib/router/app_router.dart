@@ -1,5 +1,5 @@
 import 'package:auto_route/auto_route.dart';
-import 'package:autoroute_tuto/questions_list_screen.dart';
+import 'package:autoroute_tuto/questions_list/questions_list_screen.dart';
 import 'app_router.gr.dart';
 
 @AutoRouterConfig(replaceInRouteName: 'Screen|Page,Route')

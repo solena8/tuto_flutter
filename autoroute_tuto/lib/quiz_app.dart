@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'app_router.dart';
+import 'router/app_router.dart';
 
 class QuizApp extends StatefulWidget {
   const QuizApp({super.key});
