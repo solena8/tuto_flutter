@@ -11,11 +11,13 @@
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 
 import 'package:auto_route/auto_route.dart' as _i4;
-import 'package:autoroute_tuto/models/quiz_question.dart' as _i6;
-import 'package:autoroute_tuto/question_details/question_detail_screen.dart' as _i1;
-import 'package:autoroute_tuto/questions_list/questions_list_screen.dart' as _i2;
 import 'package:autoroute_tuto/home/quiz_screen.dart' as _i3;
-import 'package:flutter/cupertino.dart' as _i5;
+import 'package:autoroute_tuto/models/quiz_question.dart' as _i6;
+import 'package:autoroute_tuto/question_details/question_detail_screen.dart'
+    as _i1;
+import 'package:autoroute_tuto/questions_list/questions_list_screen.dart'
+    as _i2;
+import 'package:flutter/material.dart' as _i5;
 
 /// generated route for
 /// [_i1.QuestionDetailScreen]

@@ -1,6 +1,5 @@
 import 'package:auto_route/annotations.dart';
 import 'package:autoroute_tuto/question_details/question_card.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../models/quiz_question.dart';
